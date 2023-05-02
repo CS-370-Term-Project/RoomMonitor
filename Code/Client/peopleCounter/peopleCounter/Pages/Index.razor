@@ -13,13 +13,18 @@
 <p>Using data received by the Time-of-Flight sensor attached to the Raspberry Pi, this app displays how many people have entered a location.</p>
 <br />
 <button class="btn btn-primary" type="submit" @onclick="() => StartClient()">Start Connection</button>
-<button class="btn btn-primary" type="submit" @onclick="() => CloseSocket()">End Connection</button>
+<button class="btn btn-secondary" type="submit" @onclick="() => CloseSocket()">End Connection</button>
+<br />
 <br />
 @if (endPointInfo != null)
 {
     <p><b>@endPointInfo</b></p>
 }
 <br />
+
+<h2>A Total of @total People Have Entered</h2>
+<br />
+
 <table class="table">
     <thead>
         <tr>
@@ -31,8 +36,11 @@
         @foreach (var person in people.Items)
         {
             <tr>
-                <td>@person.Id.ToString()</td>
-                <td>@person.Time</td>
+                @if (person.Id > 0)
+                {
+                    <td>@person.Id.ToString()</td>
+                    <td>@person.Time</td>
+                }
             </tr>
         }
     </tbody>
@@ -46,10 +54,17 @@
     IPEndPoint? localEndPoint;
     Socket? sender;
     int i = 1;
+    int total = 0;
+    bool shutDown = false;
 
     protected override async Task OnInitializedAsync()
     {
         await UpdatePage();
+    }
+
+    public bool CloseSocket(){
+        shutDown = true;
+        return shutDown;
     }
 
     public async Task UpdatePage()
@@ -84,7 +99,7 @@
                 // Creation of message that
                 // we will send to Server
                 while (true)
-                {
+                { 
                     byte[] messageSent = Encoding.ASCII.GetBytes("Data");
                     int byteSent = sender.Send(messageSent);
 
@@ -104,11 +119,18 @@
                         person.Id = i;
                         person.Time = DateTime.Now.ToString();
                         i++;
+                        total++;
                         await UpdatePage();
                     }
 
                     Thread.Sleep(2000);
 
+                }
+
+                if (shutDown)
+                {
+                    byte[] message = Encoding.ASCII.GetBytes("Quit");
+                    int sent = sender.Send(message);
                 }
             }
 
@@ -135,13 +157,5 @@
             Console.WriteLine(e.ToString());
         }
 
-    }
-
-    public void CloseSocket()
-    {
-        // Close Socket using
-        // the method Close()
-        sender.Shutdown(SocketShutdown.Both);
-        sender.Close();
     }
 }

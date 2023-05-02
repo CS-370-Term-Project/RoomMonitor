@@ -21,12 +21,15 @@ vl53.timing_budget = 100
 
 vl53.start_ranging()
 
-def is_person(data):
-    if data<863:
-        print("I see someone!")
+def is_person():
+    if vl53.data_ready:
+        distance = vl53.distance
+        vl53.clear_interrupt()
+
+    if distance<863:
+        print("Distance: {} cm".format(distance))
         return True
     else:
-        print("No one here")
         return False
 
 def my_server():
@@ -35,25 +38,22 @@ def my_server():
         s.bind((HOST, PORT))
         s.listen(5)
         conn, addr = s.accept()
-        if vl53.data_ready:
-            distance = vl53.distance
-            person = is_person(distance)
-            print("Distance: {} cm".format(distance))
-            vl53.clear_interrupt()
-        with conn:
-            print('Connected by', addr)
-            while True:
-                data = conn.recv(1024).decode('utf-8')
 
+        with conn:
+            print('Connection From', addr)
+            while True:
+                data = conn.recv(1024).decode('ascii')
 
                 if str(data) == "Data":
                     print("Sending Data")
-                    if person:
+                    if is_person():
                         my_data = "True"
+                        print("Sent True")
                     else:
                         my_data = "False"
+                        print("Sent False")
 
-                    encoded_data = my_data.encode('utf-8')
+                    encoded_data = my_data.encode('ascii')
 
                     conn.sendall(encoded_data)
                     print("Data Sent!")

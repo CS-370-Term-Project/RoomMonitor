@@ -1,0 +1,147 @@
+﻿@using System;
+@using System.Net;
+@using System.Net.Sockets;
+@using System.Text;
+@using System.Threading;
+@namespace peopleCounter.Data
+@page "/"
+
+<PageTitle>CS370 Term Project</PageTitle>
+<br />
+<h1>People Counter</h1>
+
+<p>Using data received by the Time-of-Flight sensor attached to the Raspberry Pi, this app displays how many people have entered a location.</p>
+<br />
+<button class="btn btn-primary" type="submit" @onclick="() => StartClient()">Start Connection</button>
+<button class="btn btn-primary" type="submit" @onclick="() => CloseSocket()">End Connection</button>
+<br />
+@if (endPointInfo != null)
+{
+    <p><b>@endPointInfo</b></p>
+}
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>Person</th>
+            <th>Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in people.Items)
+        {
+            <tr>
+                <td>@person.Id.ToString()</td>
+                <td>@person.Time</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    Person person = new();
+    People people = new();
+    string? endPointInfo;
+    string? message;
+    IPEndPoint? localEndPoint;
+    Socket? sender;
+    int i = 1;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await UpdatePage();
+    }
+
+    public async Task UpdatePage()
+    {
+        people.Items.Add(person);
+        person = new();
+    }
+
+    public async Task StartClient()
+    {
+        try
+        {
+            // Establish the remote endpoint for the socket.
+            IPHostEntry ipHost = Dns.GetHostEntry(Dns.GetHostName());
+            IPAddress ipAddr = IPAddress.Parse("192.168.0.104");
+            localEndPoint = new IPEndPoint(ipAddr, 10370);
+            // Creation TCP/IP Socket using
+            // Socket Class Constructor
+            sender = new Socket(ipAddr.AddressFamily,
+                       SocketType.Stream, ProtocolType.Tcp);
+
+            try
+            {
+                // Connect Socket to the remote
+                // endpoint using method Connect()
+                sender.Connect(localEndPoint);
+
+                // We display EndPoint information
+                // that we are connected
+                endPointInfo = "Socket connected to -> {0} " + sender.RemoteEndPoint.ToString();
+
+                // Creation of message that
+                // we will send to Server
+                while (true)
+                {
+                    byte[] messageSent = Encoding.ASCII.GetBytes("Data");
+                    int byteSent = sender.Send(messageSent);
+
+                    // Data buffer
+                    byte[] messageReceived = new byte[1024];
+
+                    // We receive the message using
+                    // the method Receive(). This
+                    // method returns number of bytes
+                    // received, that we'll use to
+                    // convert them to string
+                    int byteRecv = sender.Receive(messageReceived);
+                    message = Encoding.ASCII.GetString(messageReceived, 0, byteRecv);
+
+                    if (message == "True")
+                    {
+                        person.Id = i;
+                        person.Time = DateTime.Now.ToString();
+                        i++;
+                        await UpdatePage();
+                    }
+
+                    Thread.Sleep(2000);
+
+                }
+            }
+
+            // Manage of Socket's Exceptions
+            catch (ArgumentNullException ane)
+            {
+                Console.WriteLine("ArgumentNullException : {0}", ane.ToString());
+            }
+
+            catch (SocketException se)
+            {
+                Console.WriteLine("SocketException : {0}", se.ToString());
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine("Unexpected exception : {0}", e.ToString());
+            }
+        }
+
+        catch (Exception e)
+        {
+
+            Console.WriteLine(e.ToString());
+        }
+
+    }
+
+    public void CloseSocket()
+    {
+        // Close Socket using
+        // the method Close()
+        sender.Shutdown(SocketShutdown.Both);
+        sender.Close();
+    }
+}

@@ -9,41 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = peopleCounter
 build_property.RootNamespace = peopleCounter
-build_property.ProjectDir = C:\Users\Lorenzo\source\repos\peopleCounter\peopleCounter\
+build_property.ProjectDir = C:\Users\Lorenzo\GitHub\RoomMonitor\Code\Client\peopleCounter\peopleCounter\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Lorenzo\source\repos\peopleCounter\peopleCounter
+build_property.MSBuildProjectDirectory = C:\Users\Lorenzo\GitHub\RoomMonitor\Code\Client\peopleCounter\peopleCounter
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Lorenzo/source/repos/peopleCounter/peopleCounter/App.razor]
+[C:/Users/Lorenzo/GitHub/RoomMonitor/Code/Client/peopleCounter/peopleCounter/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lorenzo/source/repos/peopleCounter/peopleCounter/Pages/Index.razor]
+[C:/Users/Lorenzo/GitHub/RoomMonitor/Code/Client/peopleCounter/peopleCounter/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lorenzo/source/repos/peopleCounter/peopleCounter/Shared/SurveyPrompt.razor]
+[C:/Users/Lorenzo/GitHub/RoomMonitor/Code/Client/peopleCounter/peopleCounter/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lorenzo/source/repos/peopleCounter/peopleCounter/_Imports.razor]
+[C:/Users/Lorenzo/GitHub/RoomMonitor/Code/Client/peopleCounter/peopleCounter/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lorenzo/source/repos/peopleCounter/peopleCounter/Shared/MainLayout.razor]
+[C:/Users/Lorenzo/GitHub/RoomMonitor/Code/Client/peopleCounter/peopleCounter/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-6s83oa6g7l
 
-[C:/Users/Lorenzo/source/repos/peopleCounter/peopleCounter/Shared/NavMenu.razor]
+[C:/Users/Lorenzo/GitHub/RoomMonitor/Code/Client/peopleCounter/peopleCounter/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-x8ntz8v0pj
 
-[C:/Users/Lorenzo/source/repos/peopleCounter/peopleCounter/Pages/Error.cshtml]
+[C:/Users/Lorenzo/GitHub/RoomMonitor/Code/Client/peopleCounter/peopleCounter/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lorenzo/source/repos/peopleCounter/peopleCounter/Pages/_Host.cshtml]
+[C:/Users/Lorenzo/GitHub/RoomMonitor/Code/Client/peopleCounter/peopleCounter/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

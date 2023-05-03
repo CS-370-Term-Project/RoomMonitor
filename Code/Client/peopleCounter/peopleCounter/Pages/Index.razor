@@ -12,8 +12,10 @@
 
 <p>Using data received by the Time-of-Flight sensor attached to the Raspberry Pi, this app displays how many people have entered a location.</p>
 <br />
-<button class="btn btn-primary" type="submit" @onclick="() => StartClient()">Start Connection</button>
+<button class="btn btn-primary" type="submit" @onclick="() => InitializeClient()">Start Connection</button>
 <button class="btn btn-secondary" type="submit" @onclick="() => CloseSocket()">End Connection</button>
+<button class="btn btn-secondary" type="submit" @onclick="() => Refresh()">Update Page</button>
+
 <br />
 <br />
 @if (endPointInfo != null)
@@ -56,6 +58,7 @@
     int i = 1;
     int total = 0;
     bool shutDown = false;
+    bool start;
 
     protected override async Task OnInitializedAsync()
     {
@@ -63,6 +66,7 @@
     }
 
     public bool CloseSocket(){
+        start = false;
         shutDown = true;
         return shutDown;
     }
@@ -73,7 +77,19 @@
         person = new();
     }
 
-    public async Task StartClient()
+    public async Task InitializeClient()
+    {
+        start = true;
+        Thread t = new Thread(StartClient);
+        t.Start();
+    }
+
+    public void Refresh()
+    {
+        StateHasChanged();
+    }
+
+    public void StartClient()
     {
         try
         {
@@ -98,7 +114,7 @@
 
                 // Creation of message that
                 // we will send to Server
-                while (true)
+                while (start)
                 { 
                     byte[] messageSent = Encoding.ASCII.GetBytes("Data");
                     int byteSent = sender.Send(messageSent);
@@ -120,7 +136,9 @@
                         person.Time = DateTime.Now.ToString();
                         i++;
                         total++;
-                        await UpdatePage();
+
+                        
+                        UpdatePage();
                     }
 
                     Thread.Sleep(2000);

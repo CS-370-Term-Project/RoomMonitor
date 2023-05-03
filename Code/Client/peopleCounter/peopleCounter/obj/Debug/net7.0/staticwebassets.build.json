@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AAkDfBS0wyl3rGNruzBEA3SIBPf2br9jG5M6mYGKEHI=",
+  "Hash": "GdN0i8Dh6g3qIOV+LPl3uMkpHHly7wKEPBwgCWrtV3w=",
   "Source": "peopleCounter",
   "BasePath": "_content/peopleCounter",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "peopleCounter\\wwwroot",
       "Source": "peopleCounter",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\bundle\\peopleCounter.styles.css",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\bundle\\peopleCounter.styles.css",
       "SourceId": "peopleCounter",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "peopleCounter.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\bundle\\peopleCounter.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\bundle\\peopleCounter.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\peopleCounter.bundle.scp.css",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\peopleCounter.bundle.scp.css",
       "SourceId": "peopleCounter",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "peopleCounter.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\peopleCounter.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\peopleCounter.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\css\\site.css",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\favicon.png",
       "SourceId": "peopleCounter",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\wwwroot\\",
       "BasePath": "_content/peopleCounter",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

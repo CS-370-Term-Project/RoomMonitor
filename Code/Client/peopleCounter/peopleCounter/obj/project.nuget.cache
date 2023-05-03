@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oxdT3H77SpBRFIalrVCkLc+z43i6ylbjxwEq3E0FdFIfigBnw0M7tkk2tasNzImn45IhYyE6R442b+FHLCKlXg==",
+  "dgSpecHash": "kKgCr/8MUbRbmx9vOtA7oW9wFU7hGuymNJ4mKrCvpnT2qA7suuUrXly8tSgaMOyMvSTSDvdbz7yHMlcwqpt8YQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\peopleCounter.csproj",
+  "projectFilePath": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\peopleCounter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lorenzo\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\Lorenzo\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.9\\microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512",

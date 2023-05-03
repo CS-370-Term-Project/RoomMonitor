@@ -5620,11 +5620,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\peopleCounter.csproj",
+      "projectUniqueName": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\peopleCounter.csproj",
       "projectName": "peopleCounter",
-      "projectPath": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\peopleCounter.csproj",
+      "projectPath": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\peopleCounter.csproj",
       "packagesPath": "C:\\Users\\Lorenzo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lorenzo\\source\\repos\\peopleCounter\\peopleCounter\\obj\\",
+      "outputPath": "C:\\Users\\Lorenzo\\GitHub\\RoomMonitor\\Code\\Client\\peopleCounter\\peopleCounter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5685,7 +5685,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -26,7 +26,10 @@ def is_person():
         distance = vl53.distance
         vl53.clear_interrupt()
 
-    if distance<863:
+    if distance == None:
+        distance = 100
+
+    if distance<50:
         print("Distance: {} cm".format(distance))
         return True
     else:
@@ -37,12 +40,12 @@ def my_server():
         print("Server waiting for client to connect")
         s.bind((HOST, PORT))
         s.listen(5)
-        conn, addr = s.accept()
+        connection, addr = s.accept()
 
-        with conn:
+        with connection:
             print('Connection From', addr)
             while True:
-                data = conn.recv(1024).decode('ascii')
+                data = connection.recv(1024).decode('ascii')
 
                 if str(data) == "Data":
                     print("Sending Data")
@@ -55,11 +58,13 @@ def my_server():
 
                     encoded_data = my_data.encode('ascii')
 
-                    conn.sendall(encoded_data)
+                    connection.sendall(encoded_data)
                     print("Data Sent!")
 
                 if str(data) == "Quit":
                     print("shutting down server")
+                    connection.close()
+                    exit()
 
                 if not data:
                     break
